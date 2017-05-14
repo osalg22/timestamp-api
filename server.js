@@ -55,7 +55,11 @@ app.get('/:date', function (req, res) {
   });
 })
 
-app.listen(8080, function () {
-  console.log('Example app listening on port 8080!');
-  //console.log(new Date("/December, 15 2015").getMonth());
-})
+// app.listen(8080, function () {
+//   console.log('Example app listening on port 8080!');
+//   //console.log(new Date("/December, 15 2015").getMonth());
+// })
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
